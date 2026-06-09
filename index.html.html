@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Terms & Conditions — Alquimia Fruits S.L.</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --bg: #ffffff; --bg-secondary: #f5f5f3; --bg-info: #E6F1FB;
+    --text: #1a1a1a; --text-secondary: #555550; --text-tertiary: #999990;
+    --text-info: #0C447C; --border: rgba(0,0,0,0.12); --border-secondary: rgba(0,0,0,0.22);
+    --accent: #185FA5; --accent-dark: #0C447C;
+    --success-bg: #EAF3DE; --success-border: #3B6D11; --success-text: #27500A;
+    --success-text-light: #3B6D11; --success-pill: #97C459; --success-hover: #C0DD97;
+    --radius-md: 8px; --radius-lg: 12px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1e1e1c; --bg-secondary: #2a2a28; --bg-info: #0a2540;
+      --text: #f0f0ee; --text-secondary: #aaaaaa; --text-tertiary: #666660;
+      --text-info: #7ab8f5; --border: rgba(255,255,255,0.1); --border-secondary: rgba(255,255,255,0.2);
+      --accent: #3b82c4; --accent-dark: #7ab8f5;
+      --success-bg: #173404; --success-border: #3B6D11; --success-text: #C0DD97;
+      --success-text-light: #97C459; --success-pill: #3B6D11; --success-hover: #27500A;
+    }
+  }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; background: var(--bg-secondary); color: var(--text); min-height: 100vh; padding: 2rem 1rem; }
+  .portal { max-width: 640px; margin: 0 auto; }
+  .top-logo { text-align: center; margin-bottom: 2rem; color: var(--text-tertiary); font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; }
+  .header-card { background: var(--bg); border: 0.5px solid var(--border); border-radius: var(--radius-lg); padding: 1.5rem; margin-bottom: 1rem; }
+  .company-name { font-size: 18px; font-weight: 500; margin-bottom: 4px; }
+  .company-sub { font-size: 13px; color: var(--text-secondary); }
+  .doc-label { font-size: 11px; font-weight: 500; color: var(--text-secondary); letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 0.6rem; }
+  .toc-card { background: var(--bg); border: 0.5px solid var(--border); border-radius: var(--radius-lg); padding: 1.5rem; margin-bottom: 0.75rem; max-height: 360px; overflow-y: auto; }
+  .toc-card h3 { font-size: 13px; font-weight: 500; color: var(--text); margin: 1.1rem 0 0.35rem; }
+  .toc-card h3:first-child { margin-top: 0; }
+  .toc-card p { font-size: 13px; color: var(--text-secondary); line-height: 1.75; margin-bottom: 0.4rem; }
+  .highlight { background: var(--bg-info); border-left: 2px solid var(--accent); padding: 10px 14px; border-radius: 0 var(--radius-md) var(--radius-md) 0; margin: 0.75rem 0; }
+  .highlight p { color: var(--text-info) !important; margin: 0 !important; }
+  .scroll-hint { text-align: center; font-size: 12px; color: var(--text-tertiary); margin-bottom: 1rem; }
+  .form-card { background: var(--bg); border: 0.5px solid var(--border); border-radius: var(--radius-lg); padding: 1.5rem; margin-bottom: 1rem; }
+  .field-label { display: block; font-size: 12px; font-weight: 500; color: var(--text-secondary); margin-bottom: 6px; }
+  .field-row { margin-bottom: 1rem; }
+  input[type="text"] { width: 100%; padding: 9px 12px; border: 0.5px solid var(--border-secondary); border-radius: var(--radius-md); font-size: 14px; background: var(--bg); color: var(--text); font-family: inherit; outline: none; transition: border-color 0.15s; }
+  input[type="text"]:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(24,95,165,0.1); }
+  .checkbox-row { display: flex; gap: 10px; align-items: flex-start; padding: 14px; background: var(--bg-secondary); border-radius: var(--radius-md); margin-bottom: 1.25rem; }
+  .checkbox-row input[type="checkbox"] { margin-top: 3px; flex-shrink: 0; width: 16px; height: 16px; cursor: pointer; accent-color: var(--accent); }
+  .checkbox-row label { font-size: 13px; color: var(--text); line-height: 1.65; cursor: pointer; }
+  .accept-btn { width: 100%; padding: 13px; border-radius: var(--radius-md); border: none; font-size: 15px; font-weight: 500; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+  .accept-btn.ready { background: var(--accent); color: #fff; }
+  .accept-btn.ready:hover { background: var(--accent-dark); }
+  .accept-btn.ready:active { transform: scale(0.99); }
+  .accept-btn.disabled { background: var(--bg-secondary); color: var(--text-tertiary); cursor: not-allowed; border: 0.5px solid var(--border); }
+  .success-card { background: var(--success-bg); border: 0.5px solid var(--success-border); border-radius: var(--radius-lg); padding: 2rem 1.5rem; text-align: center; margin-bottom: 1rem; }
+  .success-icon { font-size: 36px; margin-bottom: 0.75rem; color: var(--success-text); }
+  .success-card h2 { font-size: 17px; font-weight: 500; color: var(--success-text); margin-bottom: 0.5rem; }
+  .success-card > p { font-size: 13px; color: var(--success-text-light); line-height: 1.6; }
+  .record-box { background: var(--bg); border: 0.5px solid var(--success-pill); border-radius: var(--radius-md); padding: 14px 16px; margin: 1.25rem 0; font-size: 12px; color: var(--success-text); text-align: left; line-height: 1.9; white-space: pre; font-family: 'Courier New', Courier, monospace; overflow-x: auto; }
+  .copy-btn { padding: 9px 22px; border: 1px solid var(--success-border); border-radius: var(--radius-md); background: transparent; color: var(--success-text); font-size: 13px; cursor: pointer; font-family: inherit; transition: background 0.15s; }
+  .copy-btn:hover { background: var(--success-hover); }
+  .notice { padding: 12px 16px; background: var(--bg); border: 0.5px solid var(--border); border-radius: var(--radius-md); font-size: 12px; color: var(--text-secondary); line-height: 1.7; margin-top: 1rem; }
+  .notice strong { color: var(--text); }
+  .footer { text-align: center; font-size: 11px; color: var(--text-tertiary); margin-top: 2rem; padding-bottom: 1rem; }
+</style>
+</head>
+<body>
+<div class="portal">
+  <div class="top-logo">Commercial Engagement Portal</div>
+
+  <div id="main-view">
+    <div class="header-card">
+      <div class="company-name">Alquimia Fruits S.L.</div>
+      <div class="company-sub">CIF B64292444 · Avenida de la Riera de Cassoles 20 4A, Barcelona, Spain</div>
+    </div>
+
+    <div class="doc-label">Terms and conditions of commercial engagement</div>
+
+    <div class="toc-card">
+      <h3>1. Scope and purpose</h3>
+      <p>These Terms and Conditions of Commercial Engagement ("Terms") govern all commercial transactions between the party accepting these Terms ("Client") and Alquimia Fruits S.L. ("Seller"). The Seller acts as an independent commercial broker specialising in fresh produce and fruit commodities.</p>
+
+      <h3>2. Perpetual validity and coverage of all future invoices</h3>
+      <div class="highlight">
+        <p>By accepting these Terms, the Client acknowledges and agrees that this acceptance constitutes a standing, open-ended undertaking that covers all current and future invoices, purchase orders, and commercial transactions issued by the Seller to the Client, regardless of the date of issuance, the description of goods, the destination country, or the identity of any third-party consignee, importer of record, or receiving entity — for as long as the commercial relationship between the parties remains active.</p>
+      </div>
+      <p>This acceptance shall remain in full force and effect unless and until revoked by the Client in writing, with such revocation explicitly accepted in writing by the Seller. Revocation shall not affect obligations already incurred prior to its effective date.</p>
+
+      <h3>3. Third-party consignees</h3>
+      <p>The Client acknowledges that goods may be shipped to, or invoices addressed to, third-party companies, subsidiaries, affiliated entities, or designated consignees on the Client's instruction or with the Client's knowledge. In all such cases, the payment obligation for any and all invoices issued by the Seller remains exclusively and irrevocably with the Client. The involvement of any third party as consignee, importer of record, customs declarant, or receiving entity does not transfer, reduce, or extinguish the Client's payment liability.</p>
+      <p>Invoices issued to a third-party consignee for customs clearance or logistical purposes ("proforma invoices" or "consignee invoices") shall not be construed as a transfer of the payment obligation to such third party. The Client remains the sole debtor for the amounts indicated therein.</p>
+
+      <h3>4. Payment terms</h3>
+      <p>Payment shall be made in full in the currency specified on each invoice, within the period stated therein. In the absence of a stated period, payment is due within 30 days from the invoice date. The Client shall bear all bank transfer fees, currency conversion costs, and related charges. Late payments shall accrue interest at the rate of 8% per annum from the due date.</p>
+
+      <h3>5. Force majeure and quality disputes</h3>
+      <p>Any quality claims must be submitted in writing within 48 hours of delivery, accompanied by independent survey reports. Failure to notify within this period constitutes acceptance of the goods. Force majeure events must be notified within 48 hours of occurrence.</p>
+
+      <h3>6. Governing law</h3>
+      <p>These Terms shall be governed by and construed in accordance with the laws of Spain. Any disputes arising hereunder shall be subject to the exclusive jurisdiction of the courts of Barcelona, Spain.</p>
+
+      <h3>7. Entire agreement</h3>
+      <p>These Terms, together with each individual invoice or purchase order, constitute the entire agreement between the parties with respect to the subject matter hereof and supersede all prior representations or agreements.</p>
+    </div>
+
+    <div class="scroll-hint">↓ Scroll through the full terms above before accepting</div>
+
+    <div class="form-card">
+      <div class="field-row">
+        <label class="field-label" for="client-name">Your full name</label>
+        <input type="text" id="client-name" placeholder="e.g. Mohammed Al Bakrawe" oninput="checkReady()" />
+      </div>
+      <div class="field-row">
+        <label class="field-label" for="client-company">Company name</label>
+        <input type="text" id="client-company" placeholder="e.g. Al Bakrawe General Trading LLC" oninput="checkReady()" />
+      </div>
+      <div class="field-row">
+        <label class="field-label" for="client-position">Position / title</label>
+        <input type="text" id="client-position" placeholder="e.g. Managing Director" oninput="checkReady()" />
+      </div>
+      <div class="checkbox-row">
+        <input type="checkbox" id="accept-check" onchange="checkReady()" />
+        <label for="accept-check">I confirm that I have read, understood, and agree to all terms above on behalf of the company stated. I acknowledge that this acceptance covers all current and future invoices issued by <strong>Alquimia Fruits S.L.</strong> for as long as our commercial relationship remains active, including invoices addressed to third-party consignees.</label>
+      </div>
+      <button class="accept-btn disabled" id="accept-btn" onclick="handleAccept()">I accept these terms</button>
+    </div>
+  </div>
+
+  <div id="success-view" style="display:none">
+    <div class="success-card">
+      <div class="success-icon">✓</div>
+      <h2>Terms accepted successfully</h2>
+      <p>A binding record of this acceptance has been generated below.</p>
+      <div class="record-box" id="record-box"></div>
+      <button class="copy-btn" onclick="copyRecord()">Copy acceptance record</button>
+    </div>
+    <div class="notice">
+      <strong>For your records:</strong> Copy the acceptance record above and save it to your files. The accepting party may also screenshot or print this page as confirmation. This record constitutes valid evidence of acceptance of the Terms and Conditions of Commercial Engagement.
+    </div>
+  </div>
+
+  <div class="footer">Alquimia Fruits S.L. · CIF B64292444 · Document version TCC-v1.0-2026</div>
+</div>
+<script>
+  function checkReady() {
+    const name = document.getElementById('client-name').value.trim();
+    const co   = document.getElementById('client-company').value.trim();
+    const pos  = document.getElementById('client-position').value.trim();
+    const chk  = document.getElementById('accept-check').checked;
+    document.getElementById('accept-btn').className = 'accept-btn ' + (name && co && pos && chk ? 'ready' : 'disabled');
+  }
+  function handleAccept() {
+    const name = document.getElementById('client-name').value.trim();
+    const co   = document.getElementById('client-company').value.trim();
+    const pos  = document.getElementById('client-position').value.trim();
+    const chk  = document.getElementById('accept-check').checked;
+    if (!name || !co || !pos || !chk) return;
+    const now  = new Date();
+    const date = now.toISOString().slice(0, 10);
+    const time = now.toUTCString().slice(17, 25) + ' UTC';
+    const record =
+      `Acceptance record\n` +
+      `─────────────────────────────────\n` +
+      `Date:      ${date}\n` +
+      `Time:      ${time}\n` +
+      `Name:      ${name}\n` +
+      `Company:   ${co}\n` +
+      `Position:  ${pos}\n` +
+      `Seller:    Alquimia Fruits S.L.\n` +
+      `Document:  TCC-v1.0-2026\n` +
+      `Scope:     All current and future invoices\n` +
+      `Status:    ACCEPTED`;
+    document.getElementById('record-box').innerText = record;
+    document.getElementById('main-view').style.display = 'none';
+    document.getElementById('success-view').style.display = 'block';
+    window._lastRecord = record;
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+  function copyRecord() {
+    if (!window._lastRecord) return;
+    navigator.clipboard.writeText(window._lastRecord).then(() => {
+      const btn = document.querySelector('.copy-btn');
+      btn.textContent = 'Copied!';
+      setTimeout(() => btn.textContent = 'Copy acceptance record', 2000);
+    }).catch(() => alert('Copy failed — please select and copy the text manually.'));
+  }
+</script>
+</body>
+</html>
